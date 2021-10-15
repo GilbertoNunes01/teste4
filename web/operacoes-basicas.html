@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Operacoes-basicas</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="daniellindo.css">
+
+    </head>
+    <body>
+        <div class="main">
+            <div class="caixa-central">
+                <h1>Escolha a operação desejada</h1>
+                
+                <hr />
+                
+                <form method="post" action="Calculos.jsp">
+                    
+                    <h2> - Operações básicas</h2>
+                    
+                    <br/><br/>
+                    
+                    <!--- Um erro mitigado com o atributo "Required" --->
+                    <p>Valor 1:</p>
+                    <input type="number" required name="V1" placeholder="ex:.55" />
+                    
+                    <br/>
+                    
+                    <p>Valor 2:</p>
+                    <input type="number" required name="V2" placeholder="ex:.55"/>
+                    
+                    <br/><br/>
+                    
+                    <ul>
+                        <li>Soma          <input type="radio" name="op" value="Soma"/></li>
+                        <li>Subtração     <input type="radio" name="op" value="Subtracao"/></li>
+                        <li>Multiplicação <input type="radio" name="op" value="Multiplicacao"/></li>
+                        <li>Divisão       <input type="radio" name="op" value="Divisao"/></li>
+                    </ul>
+                 
+                    <input type="submit" value="submit"/>
+                </form>
+                
+            </div>
+        </div> 
+    </body>
+</html>
